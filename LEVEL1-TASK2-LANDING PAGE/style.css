@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+:root {
+  --primary-color: #fead53;
+  --text-dark: #3333;
+  --text-light: #ffffff33;
+  --extra-light: #f3f4f6;
+  --max-width: 1300px;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+    url("bg.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+input::placeholder {
+  color: var(--extra-light);
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: var(--max-width);
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+}
+nav .logo a {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--extra-light);
+}
+.links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+.links .link_ {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--extra-light);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.links .link_:hover {
+  color: var(--primary-color);
+}
+.search {
+  padding: 0.5rem;
+  border-bottom: 2px solid var(--extra-light);
+}
+.search input {
+  color: var(--extra-light);
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+.search i {
+  color: var(--extra-light);
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.container {
+  display: flex;
+  min-height: 100vh;
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 2rem;
+  padding-top: 100px;
+  position: relative;
+}
+.containerLeft,
+.containerRight {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.containerLeft .content {
+  max-width: 400px;
+  display: grid;
+  gap: 1rem;
+}
+.content H1 {
+  font-size: 4rem;
+  line-height: 4rem;
+  color: var(--extra-light);
+  font-weight: 700;
+}
+.content p {
+  color: var(--extra-light);
+}
+
+.button {
+  display: flex;
+  gap: 1rem;
+}
+.button button {
+  padding: 0.5rem 2rem;
+  color: var(--extra-light);
+  font-size: 1rem;
+  background-color: transparent;
+  outline: none;
+  border: 2px solid var(--extra-light);
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button.readMore {
+  background-color: var(--extra-light);
+  color: black;
+}
+
+button.ourBlogs:hover {
+  background-color: var(--text-light);
+}
+.chevrons {
+  display: flex;
+  gap: 1rem;
+}
+.chevrons span {
+  height: 40px;
+  width: 40px;
+  margin-top: 350px;
+  font-size: 1.5rem;
+  color: var(--extra-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 2px solid var(--extra-light);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.chevrons span:hover {
+  background-color: var(--text-light);
+}
+
+.containerRight {
+  justify-content: flex-end;
+}
+form {
+  width: 350px;
+  display: grid;
+  border-radius: 5px;
+  background-color: var(--text-light);
+  color: var(--extra-light);
+}
+form H4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 2rem;
+}
+.formGroup {
+  display: grid;
+  padding: 0 2rem;
+  margin-bottom: 1rem;
+}
+.formGroup input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  color: var(--extra-light);
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid var(--extra-light);
+}
+form button {
+  margin-top: 1rem;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background-color: #fead53;
+  color: #f3f4f6;
+  cursor: pointer;
+}
+
+.bottom{
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 1rem;
+}
+.bottom span{
+    display: inline-block;
+    height: 4px;
+    width: 100px;
+    background-color: var(--text-light);
+}
+.bottom span:nth-child(2){
+    background-color: var(--extra-light);
+}
